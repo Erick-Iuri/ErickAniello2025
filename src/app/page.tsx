@@ -23,7 +23,7 @@ export default function Home() {
       bg="white"
       _dark={{ bg: "#1C1A1F", color: "white" }}
     >
-      {/* ~1280px */}
+      {/* ~1280px //////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
       <Flex
         /* Essa linha mostra o conteudo para a página */
         display={{
@@ -621,21 +621,67 @@ export default function Home() {
             </Flex>
           </Flex>
         </Flex>
+
+        {/* Linha sobre e trabalhos 1 */}
+        <Flex w="920px" px="20px" justify={"center"} pt="20px">
+          {/* Texto */}
+          <Flex direction={"column"} fontSize={"18px"}>
+            <Text
+              color="black"
+              _dark={{ color: "white" }}
+              pt="20px"
+              fontWeight={"bold"}
+            >
+              About Me
+            </Text>
+            <Text pt="20px" color="black" _dark={{ color: "#C9C9C9" }}>
+              Hello! I'm a passionate UX Designer with a deep understanding of
+              front-end development. I bridge the gap between user needs and
+              technical solutions.
+            </Text>
+          </Flex>
+        </Flex>
+
+        {/* Linha */}
+        <Flex position="relative" w="920px" px="20px" justify={"center"} pt="60px">
+          <Flex w="100%" h="1px" bg="black" _dark={{ bg: "white" }}></Flex>
+          {/* botão com arrow */}
+          <Button
+            bg="none"
+            color="black"
+            _dark={{ color: "white" }}
+            fontSize={"18px"}
+            position={"absolute"}
+            bottom="20%"
+            left="80%"
+          >
+            Latest projects
+            <ArrowOutwardIcon />
+          </Button>
+        </Flex>
+
+        {/* Primeiro trabalho icondo */}
+        <Flex  w="920px"  justify={"center"} pt="20px" pb="40px">
+          <Flex>
+            <Image src="banners/Grenn first image.png" />
+          </Flex>
+        </Flex>
       </Flex>
 
       {/* 768px //////////////////////////////////////////////////////////////////////////////////////////////////////////// */}
       <Flex
         /* Essa linha mostra o conteúdo para a página */
         display={{
-          base: "none",
+          base: "flex",
           sm: "flex",
           md: "flex",
           lg: "none",
           xl: "none",
         }}
+        direction={"column"}
       >
         {/* Nav: Barra de navegação */}
-        <Flex px="20px" w="420px" justify={"center"}>
+        <Flex px="20px" w="360px" justify={"center"}>
           <Flex pt="20px" w="100%" justify={"space-between"} fontSize={"18px"}>
             <Flex>
               <Text
@@ -687,7 +733,109 @@ export default function Home() {
             </Flex>
           </Flex>
         </Flex>
+
+        {/* H1 do texto de apresentação */}
+        <Flex
+          px="20px"
+          py="20px"
+          w="360px"
+          justify={"center"}
+          direction={"column"}
+        >
+          <Flex
+            fontSize={"48px"}
+            direction={"column"}
+            textAlign={"center"}
+            fontWeight={"bold"}
+          >
+            <Text pr="6px" _dark={{ color: "white" }} color="black">
+              Hi! I Am
+            </Text>
+            <Text color="black" _dark={{ color: "#C9C9C9" }}>
+              UX Designer
+            </Text>
+            <Text color={"black"} _dark={{ color: "white" }}>
+              Erick Aniello.
+            </Text>
+          </Flex>
+          <Flex
+            color={"black"}
+            pt="20px"
+            justify={"center"}
+            textAlign={"center"}
+            direction={"column"}
+            fontSize={"18px"}
+            fontWeight={"lighter"}
+            _dark={{ color: "#C9C9C9" }}
+          >
+            <Text>5 years of experience in UX design and</Text>
+            <Text>front-end development.</Text>
+          </Flex>
+        </Flex>
+
+        {/* Primeira imagem projeto 1/3 */}
+        <Flex
+          mb="20px"
+          w="360px"
+          position="relative"
+          borderRadius={"10px"}
+          h="400px"
+          cursor={"pointer"}
+        >
+          <Image borderRadius={"10px"} src="/banners/Group 412.png" />
+          <Button
+            bg="white"
+            color={"black"}
+            position="absolute"
+            bottom={"20px"}
+            left="20px"
+            py="20px"
+            px="100px"
+            borderRadius={"30px"}
+            fontWeight={"bold"}
+            _hover={{ bg: "black", color: "white" }}
+            transition={"0,5s"}
+          >
+            MORE DETAILS
+          </Button>
+        </Flex>
+
+        {/* Texto */}
+        <Flex
+          w="360px"
+          direction={"column"}
+          fontSize={"18px"}
+          justify={"center"}
+          textAlign={"center"}
+        >
+          <Text
+            color="black"
+            _dark={{ color: "white" }}
+            pt="20px"
+            fontWeight={"bold"}
+          >
+            About Me
+          </Text>
+          <Text pt="20px" color="black" _dark={{ color: "#C9C9C9" }}>
+            Hello! I'm a passionate UX Designer with a deep understanding of
+            front-end development. I bridge the gap between user needs and
+            technical solutions.
+          </Text>
+        </Flex>
+
+        {/* Linha */}
+        <Flex position="relative" w="360px" justify={"center"} pt="40px">
+          <Flex w="360px" h="1px" bg="black" _dark={{ bg: "white" }}></Flex>
+        </Flex>
+
+        {/* Primeiro trabalho icondo */}
+        <Flex w="360px" justify={"center"} pt="20px" pb="40px">
+          <Flex>
+            <Image src="banners/Grenn first image.png" />
+          </Flex>
+        </Flex>
       </Flex>
     </Flex>
   );
 }
+
